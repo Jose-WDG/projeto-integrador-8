@@ -3,10 +3,158 @@
   <head>
     <meta charset="utf-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+   
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <title>E-commerce Ponto Certo</title>
   </head>
   <body>
-    <h1>Home</h1>
+    <header>
+      <nav class="menu">
+        
+        <div class="logo">
+          <a href="index.html"><img class="logo-img" src="icons/logo.png" title="Home" alt="logo-pontocerto"></a>
+        </div>
+        <div class="icons">
+          <input class="pesquisa-barra" type="text" name="pesquisa">
+          <img class="img-fluid usuario" src="icons/login/usuario.png">
+          <img class="img-fluid carrinho" src="icons/produtos/carrinho.png">
+        </div>
+        <li class="menu-item"><a class="menu-item-link" href="#">Shop</a></li>
+        <li class="menu-item"><a class="menu-item-link" href="#">Pages</a></li>
+        <li class="menu-item"><a class="menu-item-link" href="#">Sobre</a></li>
+        <li class="menu-item"><a class="menu-item-link" href="#">Contac</a></li>
+      </nav>
+    </header>
+    <main>
+      
+          <div class="container">
+          <div class="slider">
+              <div><img class="img-fluid" src="img/carousel/1.jpg"></div>
+              <div><img class="img-fluid" src="img/carousel/2.jpg"></div>
+              <div><img class="img-fluid" src="img/carousel/3.jpg"></div>
+              <div><img class="img-fluid" src="img/carousel/4.jpg"></div> 
+          </div>
+        </div>
+       <div class="container">
+         <div class="row">
+           <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="box">
+                <img class="img" src="img/box1.jpg">
+                <div class="title-box">
+                    Camisetas
+                  </div>
+              </div>  
+            
+           </div>
+           <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="box">
+                  <img class="img" src="img/box2.jpg">
+                  <div class="title-box">
+                      calças
+                    </div>
+                </div>
+                 
+           </div>
+           <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="box">
+                  <img class="img" src="img/box3.jpg">
+                  <div class="title-box">
+                      Sapatos
+                    </div>
+                </div>
+                
+           </div>
+           <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="box">
+                  <img class="img" src="img/box4.jpg">
+                  <div class="title-box">
+                      Blusas
+                    </div>  
+                </div>
+                  
+           </div>
+         </div>
+       </div>
+       
+       <div class="container">
+          <div class="slider">
+              <div><img class="img-fluid" src="img/carousel/1.jpg"></div>
+              <div><img class="img-fluid" src="img/carousel/2.jpg"></div>
+              <div><img class="img-fluid" src="img/carousel/3.jpg"></div>
+              <div><img class="img-fluid" src="img/carousel/4.jpg"></div> 
+          </div>
+        </div>
+        <span class="title-prod">Populares produtos</span>
+        <div class="container">
+            <div class="slider4">
+                <div><img class="img-fluid" src="img/carousel/1.jpg"></div>
+                <div><img class="img-fluid" src="img/carousel/2.jpg"></div>
+                <div><img class="img-fluid" src="img/carousel/3.jpg"></div>
+                <div><img class="img-fluid" src="img/carousel/4.jpg"></div> 
+            </div>
+          </div>
+          <div class="barra-patrocinio">
+              <div class="slider-marca">
+                  <div><img class=" slider-img" src="icons/marcas/marca1.png"></div>
+                  <div><img class=" slider-img" src="icons/marcas/marca2.png"></div>
+                  <div><img class=" slider-img" src="icons/marcas/marca3.png"></div>
+                  <div><img class=" slider-img" src="icons/marcas/marca4.png"></div>
+                  <div><img class=" slider-img" src="icons/marcas/marca5.png"></div>
+                  <div><img class=" slider-img" src="icons/marcas/marca16.png"></div>
+                  <div><img class=" slider-img" src="icons/marcas/marca8.png"></div>
+              </div>
+          </div>
+          <footer>
+            
+          </footer>
+        
+    </main>
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            
+          });
+        });
+        $(document).ready(function(){
+          $('.slider4').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            autoplay: true,
+            
+          });
+        });
+        $(document).ready(function(){
+          $('.slider-marca').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            autoplay: true,
+            
+          });
+        });
+    </script>
+  </body>
   </body>
 </html>
